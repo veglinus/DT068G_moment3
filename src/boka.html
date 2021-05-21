@@ -1,0 +1,46 @@
+<script src="javascript/main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+<h2>Boka resa</h2>
+
+<p>Hej x, var vill du åka?</p>
+
+<div style="display: none">
+
+    <div id="mode-selector" class="controls">
+      <input
+        type="radio"
+        name="type"
+        id="changemode-walking"
+        
+      />
+      <label for="changemode-walking">Walking</label>
+
+      <input type="radio" name="type" id="changemode-transit" />
+      <label for="changemode-transit">Transit</label>
+
+      <input type="radio" name="type" id="changemode-driving" checked="checked" />
+      <label for="changemode-driving" >Driving</label>
+    </div>
+  </div>
+
+<form action="">
+    <label for="from">Från: </label>
+    <input type="text" name="from" id="from">
+    <br>
+    <label for="to">Till: </label>
+    <input type="text" name="to" id="to">
+
+    <br>
+    <input type="text" name="pris" id="pris" disabled value="Pris: 120kr">
+
+    
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. 
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfk7aFeRAATczp7r-LhE6QkY1eCFTbHm0&callback=initMap&libraries=places&v=weekly"
+      async
+    ></script>-->
+
+</form>

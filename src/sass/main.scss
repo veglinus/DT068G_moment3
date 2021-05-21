@@ -8,8 +8,13 @@
 
 body { 
     main {
+        line-height: 190%;
         border-top: 3px solid $yellow;
         background-color: $white;
+    }
+
+    #map {
+        height: 30vh;
     }
 
     #container {
@@ -28,6 +33,7 @@ body {
     }
 
     footer {
+        width: 100%;
         color: $white;
         background-color: $navy;
     }
@@ -48,6 +54,6 @@ body {
     body {
         width: 1285px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; 
     }
 }
