@@ -1,0 +1,53 @@
+@mixin leftyellowborder{
+    border-left: 3px solid $yellow;
+    padding-left: 1%;
+}
+
+@import "colors";
+@import "text";
+
+body { 
+    main {
+        border-top: 3px solid $yellow;
+        background-color: $white;
+    }
+
+    #container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo > a > picture > img {
+        max-width: 230px;
+    }
+
+    footer {
+        color: $white;
+        background-color: $navy;
+    }
+}
+
+
+@media only screen and (min-width: 650px) {
+    body {
+        #container {
+            width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1285px) {
+    body {
+        width: 1285px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: "Source Sans Pro", "Open Sans", "Arial", sans-serif;
+    background-color: $gray;
+    color: $dark;
+    h1 {
+        text-decoration: underline;
+        text-decoration-color: $yellow;
+    }
+    h2 {
+        font-weight: 600;
+        @include leftyellowborder();
+    }
+    h3 {
+        font-weight: 600;
+    }
+    a {
+        color: $navy;
+    }
+    h1, h2, h3, p {
+        padding-left: 1%;
+    }
+    .preamble {
+        font-weight: bold;
+        @include leftyellowborder();
+    }
+}
