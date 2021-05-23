@@ -30,6 +30,11 @@ body {
         background-color: $white;
     }
 
+    .innercontent {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
     #flexwrapper {
         display: block;
 
@@ -64,6 +69,12 @@ body {
         align-items: center;
 
         #flexright {
+            form {
+                input[type=search] {
+                    border: 2px solid $dark;
+                    border-radius: 5px;
+                }
+            }
             nav {
                 ul {
                     list-style: none;
@@ -98,6 +109,14 @@ body {
         nav {
             ul {
                 list-style: none;
+
+                li {
+                    a {
+                        color: $white;
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
