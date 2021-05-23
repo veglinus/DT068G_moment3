@@ -1,6 +1,10 @@
-@mixin leftyellowborder{
+@mixin leftyellowborder {
     border-left: 3px solid $yellow;
     padding-left: 1%;
+}
+@mixin flexaround {
+    display: flex;
+    justify-content: space-around;
 }
 
 @import "colors";
@@ -11,6 +15,29 @@ body {
         line-height: 190%;
         border-top: 3px solid $yellow;
         background-color: $white;
+    }
+
+    #flexwrapper {
+        display: block;
+
+        #flexleft {
+            margin-bottom: 5%;
+            background-color: $navy;
+            color: $white;
+        }
+        #flexright {
+            background-color: $gray;
+            color: $dark;
+        }
+
+        #flexleft, #flexright {
+            border-radius: 15px;
+            padding: 1% 2%;
+
+            h2 {
+                border-left: none;
+            }
+        }
     }
 
     #map {
@@ -24,7 +51,7 @@ body {
 
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -36,6 +63,13 @@ body {
         width: 100%;
         color: $white;
         background-color: $navy;
+        @include flexaround();
+
+        nav {
+            ul {
+                list-style: none;
+            }
+        }
     }
 }
 
@@ -46,6 +80,20 @@ body {
             width: 650px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #flexwrapper {
+            display: flex;
+            justify-content: space-around;
+
+            #flexleft {
+                margin-bottom: unset;
+            }
+    
+            #flexleft, #flexright {
+                width: 40%;
+            }
+    
         }
     }
 }

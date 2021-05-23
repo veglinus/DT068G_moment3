@@ -39,7 +39,7 @@ function copyAssets() {
 
 // Minifiera och sammanslår JS
 function minifyJS() {
-    minifyAdminJS();
+    //minifyAdminJS();
     return src(files.js)
         .pipe(concat("javascript/main.js"))
         
