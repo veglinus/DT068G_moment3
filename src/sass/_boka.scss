@@ -1,0 +1,54 @@
+body {
+    #map {
+        height: 25vh;
+    }
+
+    #reoccuringbox {// Visas när återkommande resa klickats i
+        display: none;
+
+        #dates {
+            display: block;
+            input {
+                display: inline-block;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+
+    #bokaresa {
+
+
+        .formflex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1%;
+            margin-bottom: 3%;
+
+            label {
+                font-weight: 700;
+            }
+        
+            input {
+                border-radius: 5px;
+                border: 1px solid darken($color: $gray, $amount: 25);
+                width: 85%;
+                padding: 1% 2%;
+            }
+
+
+
+
+
+            #pris {
+                width: 100%;
+                margin-top: 2%;
+            }
+        }
+        input[type=submit] {
+            @include yellowbutton();
+            padding: 2% 4%;
+        }
+    }
+}

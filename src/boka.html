@@ -3,7 +3,7 @@
 
 <h2>Boka resa</h2>
 
-<p>Hej x, var vill du åka?</p>
+<p>Hej Linus Hvenfelt, var vill du åka?</p>
 
 <div style="display: none">
 
@@ -22,25 +22,64 @@
       <input type="radio" name="type" id="changemode-driving" checked="checked" />
       <label for="changemode-driving" >Driving</label>
     </div>
+</div>
+
+<form action="" id="bokaresa">
+  <div class="formflex">
+    <label for="from">Från:</label>
+    <!-- Find my location icon -->
+    <input type="text" name="from" id="from">
   </div>
 
-<form action="">
-    <label for="from">Från: </label>
-    <input type="text" name="from" id="from">
-    <br>
-    <label for="to">Till: </label>
+  <div class="formflex">
+    <label for="to">Till:</label>
     <input type="text" name="to" id="to">
+  </div>
 
-    <br>
+  <div class="formflex">
+    <label for="datetime">När:</label>
+    <input type="datetime-local" name="datetime" id="datetime">
+  </div>
+
+  <div class="formflex">
     <input type="text" name="pris" id="pris" disabled value="Pris: 120kr">
+    <!-- Info ikon -->
+  </div>
 
-    
-    <div id="map"></div>
+  <div id="map"></div>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfk7aFeRAATczp7r-LhE6QkY1eCFTbHm0&callback=initMap&libraries=places&v=weekly"
-      async
-    ></script>-->
+  <div>
+    <span>Passagerare/ledsagare?</span>
+    <input type="checkbox" name="passagerare" id="passagerare">
+    <label for="passagerare">Ja</label>
+  </div>
 
+  <div>
+    <span>Återkommande resa?</span>
+    <input type="checkbox" name="reoccuring" id="reoccuring" onclick="checkmark()">
+    <label for="reoccuring">Ja</label>
+  </div>
+
+  <div id="reoccuringbox">
+    <div id="dates">
+      <div>
+        <input type="datetime-local" name="trip2" id="trip2">
+        <button>Ta bort</button>
+      </div>
+    </div>
+
+    <a href="#dates" onclick="addDate()">Lägg till ett datum till</a>
+    <br>
+  </div>
+
+  <input type="submit" value="Boka resa">
 </form>
+
+<a href="info.html">Regler och villkor</a>
+
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. 
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfk7aFeRAATczp7r-LhE6QkY1eCFTbHm0&callback=initMap&libraries=places&v=weekly"
+  async
+></script>-->

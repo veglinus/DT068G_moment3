@@ -19,15 +19,7 @@ body {
 
         .resa {
             button {
-                border: 2px solid $dark;
-                border-radius: 5px;
-                background-color: $yellow;
-
-                color: $dark;
-                font-size: 1em;
-                font-weight: 700;
-
-                padding: 1% 1%;
+                @include yellowbutton();
             }
         }
     }
