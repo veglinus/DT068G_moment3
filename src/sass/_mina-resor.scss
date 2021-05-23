@@ -1,0 +1,34 @@
+body {
+    .resor {
+        .resa:nth-child(even) {
+            border-radius: 5px;
+            background-color: $gray;
+        }
+        .resa {
+            padding: 1%;
+            margin-bottom: 3%;
+
+            h3 {
+                margin-block-start: 0.2em;
+                margin-block-end: 0.2em;
+            }
+            p {
+                margin-block-start: 0.1em;
+            }
+        }
+
+        .resa {
+            button {
+                border: 2px solid $dark;
+                border-radius: 5px;
+                background-color: $yellow;
+
+                color: $dark;
+                font-size: 1em;
+                font-weight: 700;
+
+                padding: 1% 1%;
+            }
+        }
+    }
+}
