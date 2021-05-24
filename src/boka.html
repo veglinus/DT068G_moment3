@@ -28,22 +28,22 @@
   <div class="formflex">
     <label for="from">Från:</label>
     <!-- Find my location icon -->
-    <input type="text" name="from" id="from">
+    <input type="text" name="from" id="from" autocomplete="street-address" required>
   </div>
 
   <div class="formflex">
     <label for="to">Till:</label>
-    <input type="text" name="to" id="to">
+    <input type="text" name="to" id="to" autocomplete="street-address" required>
   </div>
 
   <div class="formflex">
     <label for="datetime">När:</label>
-    <input type="datetime-local" name="datetime" id="datetime">
+    <input type="datetime-local" name="datetime" id="datetime" required>
   </div>
 
   <div class="formflex">
     <input type="text" name="pris" id="pris" disabled value="Pris: 120kr">
-    <!-- Info ikon -->
+    <!-- Info ikon --> 
   </div>
 
   <div id="map"></div>
@@ -61,7 +61,7 @@
   </div>
 
   <div id="reoccuringbox">
-    <div id="dates">
+    <div id="dates" aria-live="polite">
       <div>
         <input type="datetime-local" name="trip2" id="trip2">
         <button>Ta bort</button>
