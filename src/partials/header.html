@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Kungälvs Färdtjänst</title>
 </head>
 <body>
@@ -14,12 +15,11 @@
                 <picture>
                     <img src="assets/logga.png" alt="Kungälvs Färdtjänst">
                     <!--<source srcset="assets/logga.webp" type="image/webp" alt="Kungälvs Färdtjänst">-->
-                    
                 </picture>
             </a>
         </div>
 
-        <div id="flexright">
+        <div id="headerright">
             <nav aria-label="Meny">
                 <ul>
                     <li><a href="boka.html">Boka resa</a></li>
@@ -27,8 +27,10 @@
                 </ul>
             </nav>
             <form action="" role="search">
-                <input type="search" role="searchbox" name="search" id="search" spellcheck="false" aria-placeholder="Sök">
-                <input type="submit" value="Sök">
+                <input type="search" role="searchbox" name="search" id="search" spellcheck="false" aria-placeholder="Sök" aria-label="Sök">
+                <button type="submit">
+                    <img src="assets/search.png" alt="Sök">
+                </button>
             </form>
         </div>
     </header>
