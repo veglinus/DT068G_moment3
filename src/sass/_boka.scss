@@ -18,6 +18,12 @@ body {
 
     #bokaresa {
 
+        fieldset {
+            margin-bottom: 3%;
+            legend {
+                font-weight: 700;
+            }
+        }
 
         .formflex {
             display: flex;
@@ -46,9 +52,6 @@ body {
                 margin-top: 2%;
             }
         }
-        input[type=submit] {
-            @include yellowbutton();
-            padding: 2% 4%;
-        }
+
     }
 }

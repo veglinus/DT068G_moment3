@@ -25,3 +25,24 @@ function addDate() { // function to add another date
 
     boxy.appendChild(div);
 }
+
+
+if (window.location.pathname == "/boka.html" || window.location.pathname == "/information.html") {
+    document.getElementById("ungdom").addEventListener('change', function (event) {
+
+        var value = document.getElementById("ungdom").value;
+        if (value === "ungdom") {
+            document.getElementById("ungdomstaxa").style.display = "table-row-group";
+            document.getElementById("vuxentaxa").style.display = "none";
+        }
+    });
+    
+    document.getElementById("vuxen").addEventListener('change', function (event) {
+    
+        var value = document.getElementById("vuxen").value;
+        if (value === "vuxen") {
+        document.getElementById("ungdomstaxa").style.display = "none";
+        document.getElementById("vuxentaxa").style.display = "table-row-group";
+        }
+    });
+}

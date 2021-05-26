@@ -5,6 +5,7 @@ body {
     font-size: 1.1em;
     
     h1 {
+        text-align: center;
         text-decoration: underline;
         text-decoration-color: $yellow;
     }
@@ -15,12 +16,39 @@ body {
     h3 {
         font-weight: 600;
     }
+
+    /* LINKS */
     a {
+        word-break: break-all;
         color: $navy;
     }
+    a:hover {
+        color: $light;
+        text-decoration: none;
+    } 
+    a:visited {
+        color: #551A8B;
+    }
+
     .lightlink {
         color: $white;
     }
+    .lightlink:hover {
+        color: $white;
+    }
+    .lightlink:visited, footer > nav > ul > li > a:visited {
+        color: lighten($color: #551A8B, $amount: 80);
+    }
+
+    header {
+        #headerright > nav > ul > li > a:hover {
+            text-decoration: underline;
+            color: $navy;
+        }
+    }
+
+    /* END OF LINKS */
+
     h1, h2, h3, p {
         padding-left: 1%;
     }
@@ -33,6 +61,14 @@ body {
 @media only screen and (min-width: 650px) {
     body {
         font-size: 1.15em;
+
+        a {
+            word-break: initial;
+        }
+
+        h1 {
+            text-align: left;
+        }
     }
 }
 
