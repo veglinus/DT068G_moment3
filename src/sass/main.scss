@@ -26,7 +26,12 @@
 @import "boka";
 @import "mina-resor";
 
+html {
+    max-height: 100vh;
+}
+
 body { 
+    border: none;
     margin: 0;
 
     input[type=submit] {
@@ -35,6 +40,11 @@ body {
     }
     input[type=submit]:hover {
         @include yellowbuttonHover();
+    }
+    input[type=checkbox], input[type=radio] {
+        vertical-align: middle;
+        height: 1.4em;
+        width: 1.4em;
     }
 
     main {
@@ -163,7 +173,7 @@ body {
         #headerright {
             min-width: 250px;
             form {
-                margin-bottom: 2%;
+                margin-bottom: 4%;
                 text-align: center;
 
                 input[type=search] {
@@ -192,13 +202,17 @@ body {
             
             nav {
                 ul {
+                    margin-top: 1%;
+                    margin-bottom: 1%;
                     list-style: none;
                     padding-left: 0;
 
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
 
                     li {
+                        margin-left: 2%;
+                        margin-right: 2%;
                         a {
                             color: $dark;
                             font-size: 1.2em;
@@ -223,14 +237,17 @@ body {
 
     footer {
         width: 100%;
+        padding-bottom: 1%;
         color: $white;
         background-color: $navy;
 
         #footerleft {
             p {
+                padding-top: 3%;
                 text-align: center;
             }
         }
+
         
 
         nav {
@@ -239,6 +256,8 @@ body {
                 padding-inline-start: 0;
 
                 li {
+                    margin-top: 1%;
+                    margin-bottom: 1%;
                     text-align: center;
                     a {
                         
@@ -264,6 +283,10 @@ body {
             align-items: center;
 
             #headerright {
+
+                form {
+                    margin-bottom: 2%;
+                }
                 nav {
                     ul {
                         justify-content: space-around;
@@ -299,6 +322,7 @@ body {
 
         footer {
             @include flexaround();
+            padding-bottom: initial;
 
             #footerleft {
                 p {
