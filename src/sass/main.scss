@@ -306,6 +306,15 @@ body {
             margin-right: auto;
         }
 
+        section {
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+
         #flexwrapper {
             display: flex;
             justify-content: space-around;
@@ -314,8 +323,12 @@ body {
                 margin-bottom: unset;
             }
     
-            #flexleft, #flexright {
-                width: 40%;
+            #flexright, #flexleft {
+                width: 45%;
+            }
+
+            h2 {
+                margin-block-start: 0.4em;
             }
     
         }
