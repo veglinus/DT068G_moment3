@@ -33,16 +33,17 @@
   </p>
 </section>
 
+<section>
+  <h2>Färdtjänst i andra kommuner(riksfärdtjänst)</h2>
+  <p>Om du ska vistas i en annan kommun så kan du ansöka om att ha tillgång till färdtjänst även vid din destination, detta kallas för riksfärdtjänst. Du kan högst resa i 6 månader i en annan kommun och betalar då det pris som vistelsekommunen har. Du kan söka för ett enstaka tillfälle eller för återkommande besök.</p>
+  <p>Ansök om riksfärdtjänst senast 3 veckor innan resan, men helst tidigare om du har möjlighet. Fyll i följande ansökningsblankett:
+      <a href="https://www.kungalv.se/siteassets/dokument/omsorg-och-hjalp/blanketter/ansokan-riksfardtjanst.pdf">https://www.kungalv.se/siteassets/dokument/omsorg-och-hjalp/blanketter/ansokan-riksfardtjanst.pdf</a>    
+  </p>
+  <p>En handläggare går sedan igenom din ansökan utifrån lagen om riksfärdtjänst. Du måste även söka om riksfärdtjänst i varje kommun du ska resa igenom. Vi utgår ifrån att du skall använda allmänna kommunikationsmedel. Vi undersöker om du först kan resa med buss, tåg eller flyg, men beslutet kan även bli att få resa med taxi eller annat färdtjänstfordon.</p>
+</section>
 
-<h2>Färdtjänst i andra kommuner(riksfärdtjänst)</h2>
-<p>Om du ska vistas i en annan kommun så kan du ansöka om att ha tillgång till färdtjänst även vid din destination, detta kallas för riksfärdtjänst. Du kan högst resa i 6 månader i en annan kommun och betalar då det pris som vistelsekommunen har. Du kan söka för ett enstaka tillfälle eller för återkommande besök.</p>
-<p>Ansök om riksfärdtjänst senast 3 veckor innan resan, men helst tidigare om du har möjlighet. Fyll i följande ansökningsblankett:
-    <a href="https://www.kungalv.se/siteassets/dokument/omsorg-och-hjalp/blanketter/ansokan-riksfardtjanst.pdf">https://www.kungalv.se/siteassets/dokument/omsorg-och-hjalp/blanketter/ansokan-riksfardtjanst.pdf</a>    
-</p>
-<p>En handläggare går sedan igenom din ansökan utifrån lagen om riksfärdtjänst. Du måste även söka om riksfärdtjänst i varje kommun du ska resa igenom. Vi utgår ifrån att du skall använda allmänna kommunikationsmedel. Vi undersöker om du först kan resa med buss, tåg eller flyg, men beslutet kan även bli att få resa med taxi eller annat färdtjänstfordon.</p>
-
-
-<h2>Sjukresor</h2>
+<section>
+  <h2>Sjukresor</h2>
 <p>Du kan inte använda vår färdtjänst för resor till:
     <ul>
         <li>Sjukhus</li>
@@ -55,92 +56,98 @@
 
     Läs mer om sjukresor hos sjukresehandboken: <a href="https://www.vgregion.se/halsa-och-vard/vardgivarwebben/vardadministration/sjukresehandboken/">https://www.vgregion.se/halsa-och-vard/vardgivarwebben/vardadministration/sjukresehandboken/</a>
 </p>
+</section>
 
-<h2>Bokningsvillkor</h2>
-<p>Du kan boka en färdtjänstresa max 14 dagar innan resan ska utföras, och minst 1 timma innan.
-    Du kan avboka din resa max en timma innan avfärd, i denna webbtjänst eller på telefon hos Beställningscentralen med telefonnummer <a href="tel:+4620919090">020-91 90 90</a>.
-</p>
+<section>
+  <h2>Bokningsvillkor</h2>
+  <p>Du kan boka en färdtjänstresa max 14 dagar innan resan ska utföras, och minst 1 timma innan.
+      Du kan avboka din resa max en timma innan avfärd, i denna webbtjänst eller på telefon hos Beställningscentralen med telefonnummer <a href="tel:+4620919090">020-91 90 90</a>.
+  </p>
+</section>
 
-<h2>Pris</h2>
-<div id="pris">
+<section>
+  <h2>Pris</h2>
+  <div id="pris">
+  
+    <fieldset>
+      <legend>Prislista</legend>
+  
+      <input type="checkbox" name="nattaxa" id="nattaxa">
+      <label for="nattaxa">Nattaxa (00-04) +50% pris</label><br>
+      
+      <input type="radio" name="taxa" id="ungdom" value="ungdom">
+      <label for="ungdom">Ungdomspris (7 till 20 år)</label><br>
+  
+      <input type="radio" name="taxa" id="vuxen" value="vuxen" checked="checked">
+      <label for="vuxen">Vuxenpris</label><br>
+  
+      <p>Priserna nedan gäller mellan Kungälv och följande kommuner:</p>
+  
+      <table id="vuxentabell">
+  
+        <thead>
+          <tr>
+            <th>Pris</th>
+            <th>Kommun</th>
+          </tr>
+        </thead>
+  
+        <tbody id="vuxentaxa">
+          <tr>
+            <td>63 kr</td>
+            <td>Inom Kungälv</td>
+          </tr>
+  
+          <tr>
+            <td>76 kr</td>
+            <td>Ale</td>
+          </tr>
+  
+          <tr>
+            <td>127 kr</td>
+            <td>Göteborg, Mölndal, Partille, Lerum, Härryda</td>
+          </tr>
+  
+          <tr>
+            <td>129 kr</td>
+            <td>Stenungsund, Lilla Edet</td>
+          </tr>
+  
+          <tr>
+            <td>182 kr</td>
+            <td>Alingsås, Tjörn, Öckerö, Orust, Kungsbacka</td>
+          </tr>
+        </tbody>
+  
+        <tbody id="ungdomstaxa">
+          <tr>
+            <td>48 kr</td>
+            <td>Inom Kungälv</td>
+          </tr>
+  
+          <tr>
+            <td>57 kr</td>
+            <td>Ale</td>
+          </tr>
+  
+          <tr>
+            <td>95 kr</td>
+            <td>Göteborg, Mölndal, Partille, Lerum, Härryda</td>
+          </tr>
+  
+          <tr>
+            <td>96 kr</td>
+            <td>Stenungsund, Lilla Edet</td>
+          </tr>
+  
+          <tr>
+            <td>136 kr</td>
+            <td>Alingsås, Tjörn, Öckerö, Orust, Kungsbacka</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </div>
+</section>
 
-  <fieldset>
-    <legend>Prislista</legend>
-
-    <input type="checkbox" name="nattaxa" id="nattaxa">
-    <label for="nattaxa">Nattaxa (00-04) +50% pris</label><br>
-    
-    <input type="radio" name="taxa" id="ungdom" value="ungdom">
-    <label for="ungdom">Ungdomspris (7 till 20 år)</label><br>
-
-    <input type="radio" name="taxa" id="vuxen" value="vuxen" checked="checked">
-    <label for="vuxen">Vuxenpris</label><br>
-
-    <p>Priserna nedan gäller mellan Kungälv och följande kommuner:</p>
-
-    <table id="vuxentabell">
-
-      <thead>
-        <tr>
-          <th>Pris</th>
-          <th>Kommun</th>
-        </tr>
-      </thead>
-
-      <tbody id="vuxentaxa">
-        <tr>
-          <td>63 kr</td>
-          <td>Inom Kungälv</td>
-        </tr>
-
-        <tr>
-          <td>76 kr</td>
-          <td>Ale</td>
-        </tr>
-
-        <tr>
-          <td>127 kr</td>
-          <td>Göteborg, Mölndal, Partille, Lerum, Härryda</td>
-        </tr>
-
-        <tr>
-          <td>129 kr</td>
-          <td>Stenungsund, Lilla Edet</td>
-        </tr>
-
-        <tr>
-          <td>182 kr</td>
-          <td>Alingsås, Tjörn, Öckerö, Orust, Kungsbacka</td>
-        </tr>
-      </tbody>
-
-      <tbody id="ungdomstaxa">
-        <tr>
-          <td>48 kr</td>
-          <td>Inom Kungälv</td>
-        </tr>
-
-        <tr>
-          <td>57 kr</td>
-          <td>Ale</td>
-        </tr>
-
-        <tr>
-          <td>95 kr</td>
-          <td>Göteborg, Mölndal, Partille, Lerum, Härryda</td>
-        </tr>
-
-        <tr>
-          <td>96 kr</td>
-          <td>Stenungsund, Lilla Edet</td>
-        </tr>
-
-        <tr>
-          <td>136 kr</td>
-          <td>Alingsås, Tjörn, Öckerö, Orust, Kungsbacka</td>
-        </tr>
-      </tbody>
-    </table>
-  </fieldset>
-</div>
 <br>
